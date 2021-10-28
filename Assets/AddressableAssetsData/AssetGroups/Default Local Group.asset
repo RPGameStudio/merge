@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 05011e397e3644a8ebaaa8c4ca410c84
+  m_SerializeEntries:
+  - m_GUID: 6aac81f3a8dd74bfcaa2bad09608f588
+    m_Address: Assets/Prefabs/Entities/9-Sliced.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 005d83fae1dab4f47bd10aa036d5066a
+    m_Address: Assets/Prefabs/Entities/Hexagon Pointed-Top.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 37f65089bc69a40a9894ea6fd9a8c8c6
+    m_Address: Assets/Prefabs/Entities/Isometric Diamond.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9e5ca12c6085452192e5ca556e07bfa
+    m_Address: Assets/Prefabs/Entities/Circle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5e251f2d158754fdeaa172ece0c651d1
+    m_Address: Assets/Prefabs/Entities/Square.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8e8c5b13774324b6aa82accdf0ef926d
+    m_Address: Assets/Prefabs/Entities/Hexagon Flat-Top.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9eb03ffe5a5e345e58e7e4d0f623abc7
+    m_Address: Assets/Prefabs/Entities/Capsule.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b24627f809614bc8bd2ae5eeb047c54
+    m_Address: Assets/Data/Merge databse.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6d6c82d7273e4a7d87437bd629d6c59
+    m_Address: Assets/Prefabs/coin.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 668200fef77f749deac0d89d016f28f2
+    m_Address: Assets/Data/Content database.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f97f1bed397894b76bd30ad2c34e3c8b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4d505168cedc6402b9ef1469b00136d7, type: 2}
+    - {fileID: 11400000, guid: 3cd86f23331184f51b96313abfe08dc2, type: 2}

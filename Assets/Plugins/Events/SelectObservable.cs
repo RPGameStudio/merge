@@ -8,7 +8,7 @@ namespace RX
     {
         private Func<TSource, TResult> _selector;
 
-        public SelectObservable(IObservable<TSource> observable, Func<TSource, TResult> selector) : base(observable)
+        public SelectObservable(IAsyncObservable<TSource> observable, Func<TSource, TResult> selector) : base(observable)
         {
             _selector = selector;
         }

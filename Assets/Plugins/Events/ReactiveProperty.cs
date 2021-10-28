@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 namespace RX
 {
     [Serializable]
-    public class ReactiveProperty<T> : IObservable<T>, IReactiveProperty<T>
+    public class ReactiveProperty<T> : IAsyncObservable<T>, IReactiveProperty<T>
     {
         private T _value = default;
-        [NonSerialized] private SortedDictionary<int, LinkedList<IObserver<T>>> _observers;
+        [NonSerialized] private SortedDictionary<int, LinkedList<IAsyncObserver<T>>> _observers;
 
         public T Value
         {
@@ -20,14 +20,14 @@ namespace RX
             }
         }
 
-        public ReactiveProperty() => _observers = new SortedDictionary<int, LinkedList<IObserver<T>>>();
+        public ReactiveProperty() => _observers = new SortedDictionary<int, LinkedList<IAsyncObserver<T>>>();
         public ReactiveProperty(T value) : this() => _value = value;
 
-        public IDisposable Subscribe(IObserver<T> observer)
+        public IDisposable Subscribe(IAsyncObserver<T> observer)
         {
             if (!_observers.ContainsKey(observer.Priority))
             {
-                _observers.Add(observer.Priority, new LinkedList<IObserver<T>>());
+                _observers.Add(observer.Priority, new LinkedList<IAsyncObserver<T>>());
             }
 
             var observers = _observers;

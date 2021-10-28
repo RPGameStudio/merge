@@ -7,7 +7,7 @@ namespace RX
     {
         private Predicate<T> _predicate;
 
-        public WhereObservable(IObservable<T> observable, Predicate<T> predicate) : base(observable)
+        public WhereObservable(IAsyncObservable<T> observable, Predicate<T> predicate) : base(observable)
         {
             _predicate = predicate;
         }

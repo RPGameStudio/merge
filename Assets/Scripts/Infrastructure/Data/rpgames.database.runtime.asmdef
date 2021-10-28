@@ -1,0 +1,16 @@
+{
+    "name": "rpgames.database.runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:781af9ed2ecd24f49b745a6e80872c4c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

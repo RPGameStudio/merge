@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfcf113abac4145739cb612c28595800, type: 3}
+  m_Name: Content database
+  m_EditorClassIdentifier: 
+  _content:
+  - _guid: 015cdea93f2724d4d9759528ce1d7bb7
+    _data:
+      id: 0
+  - _guid: 0154edc781fa24be29ec9ecabf230cf2
+    _data:
+      id: 1
+  - _guid: 4a0c07e0d05ca42a5bdf854983b56834
+    _data:
+      id: 2
+  - _guid: 4c786797d99874ca687e4baa7bb304d1
+    _data:
+      id: 3
+  - _guid: c618451ecc5e94619b7c36fbc5ed5c3a
+    _data:
+      id: 4
+  - _guid: 89e93e0e88e704a09af10ab30dcea33f
+    _data:
+      id: 5
+  - _guid: be5e564cea05f4b859871831b03f88c7
+    _data:
+      id: 6
+  references:
+    version: 1
+    00000000:
+      type: {class: EntityData, ns: , asm: Assembly-CSharp}
+      data:
+        _name: 9-Sliced
+        _guid: 015cdea93f2724d4d9759528ce1d7bb7
+        _profit: 64
+        _prefab:
+          m_AssetGUID: 6aac81f3a8dd74bfcaa2bad09608f588
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        _profitSpawnPeriod: 5
+        _spawnPeriod: 5
+    00000001:
+      type: {class: EntityData, ns: , asm: Assembly-CSharp}
+      data:
+        _name: Capsule
+        _guid: 0154edc781fa24be29ec9ecabf230cf2
+        _profit: 4
+        _prefab:
+          m_AssetGUID: 9eb03ffe5a5e345e58e7e4d0f623abc7
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        _profitSpawnPeriod: 5
+        _spawnPeriod: 5
+    00000002:
+      type: {class: EntityData, ns: , asm: Assembly-CSharp}
+      data:
+        _name: Circle
+        _guid: 4a0c07e0d05ca42a5bdf854983b56834
+        _profit: 2
+        _prefab:
+          m_AssetGUID: c9e5ca12c6085452192e5ca556e07bfa
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        _profitSpawnPeriod: 5
+        _spawnPeriod: 5
+    00000003:
+      type: {class: EntityData, ns: , asm: Assembly-CSharp}
+      data:
+        _name: Hexagon Flat-Top
+        _guid: 4c786797d99874ca687e4baa7bb304d1
+        _profit: 8
+        _prefab:
+          m_AssetGUID: 8e8c5b13774324b6aa82accdf0ef926d
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        _profitSpawnPeriod: 5
+        _spawnPeriod: 5
+    00000004:
+      type: {class: EntityData, ns: , asm: Assembly-CSharp}
+      data:
+        _name: Hexagon Pointed-Top
+        _guid: c618451ecc5e94619b7c36fbc5ed5c3a
+        _profit: 16
+        _prefab:
+          m_AssetGUID: 005d83fae1dab4f47bd10aa036d5066a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        _profitSpawnPeriod: 5
+        _spawnPeriod: 5
+    00000005:
+      type: {class: EntityData, ns: , asm: Assembly-CSharp}
+      data:
+        _name: Isometric Diamond
+        _guid: 89e93e0e88e704a09af10ab30dcea33f
+        _profit: 32
+        _prefab:
+          m_AssetGUID: 37f65089bc69a40a9894ea6fd9a8c8c6
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        _profitSpawnPeriod: 5
+        _spawnPeriod: 5
+    00000006:
+      type: {class: EntityData, ns: , asm: Assembly-CSharp}
+      data:
+        _name: Square
+        _guid: be5e564cea05f4b859871831b03f88c7
+        _profit: 1
+        _prefab:
+          m_AssetGUID: 5e251f2d158754fdeaa172ece0c651d1
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        _profitSpawnPeriod: 5
+        _spawnPeriod: 5

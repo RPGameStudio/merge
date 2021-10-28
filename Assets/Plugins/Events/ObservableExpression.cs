@@ -3,20 +3,20 @@ using System.Threading.Tasks;
 
 namespace RX
 {
-    internal abstract class ObservableExpression<TSource, TResult> : IObservable<TResult>, IObserver<TSource>
+    internal abstract class ObservableExpression<TSource, TResult> : IAsyncObservable<TResult>, IAsyncObserver<TSource>
     {
-        protected IObservable<TSource> _observable;
-        protected IObserver<TResult> _observer;
+        protected IAsyncObservable<TSource> _observable;
+        protected IAsyncObserver<TResult> _observer;
 
         public bool SkipLatestOnSubscribe => _observer.SkipLatestOnSubscribe;
         public int Priority => _observer.Priority;
 
-        public ObservableExpression(IObservable<TSource> observable)
+        public ObservableExpression(IAsyncObservable<TSource> observable)
         {
             _observable = observable;
         }
 
-        public IDisposable Subscribe(IObserver<TResult> observer)
+        public IDisposable Subscribe(IAsyncObserver<TResult> observer)
         {
             _observer = observer;
             var subscribtion = _observable.Subscribe(this);
@@ -27,8 +27,8 @@ namespace RX
             };
         }
 
-        async Task IObserver<TSource>.OnCompleted() => await _observer.OnCompleted();
-        async Task IObserver<TSource>.OnError(Exception exception) => await _observer.OnError(exception);
+        async Task IAsyncObserver<TSource>.OnCompleted() => await _observer.OnCompleted();
+        async Task IAsyncObserver<TSource>.OnError(Exception exception) => await _observer.OnError(exception);
         public abstract Task OnNext(TSource value);
     }
 }

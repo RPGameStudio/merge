@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400173f10180c40e899c98143f2bd657, type: 3}
+  m_Name: Square
+  m_EditorClassIdentifier: 
+  _guid: be5e564cea05f4b859871831b03f88c7
+  _data:
+    _name: Square
+    _guid: be5e564cea05f4b859871831b03f88c7
+    _profit: 1
+    _prefab:
+      m_AssetGUID: 5e251f2d158754fdeaa172ece0c651d1
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    _profitSpawnPeriod: 5
+    _spawnPeriod: 5

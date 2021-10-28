@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace RX
 {
-    internal class DefaultObserver<T> : IObserver<T>
+    internal class DefaultObserver<T> : IAsyncObserver<T>
     {
         public Func<T, Task> OnNext;
         public Func<Exception, Task> OnError;
@@ -12,19 +12,19 @@ namespace RX
         public bool SkipLatestOnSubscribe { get; set; }
         public int Priority { get; set; }
 
-        async Task IObserver<T>.OnCompleted()
+        async Task IAsyncObserver<T>.OnCompleted()
         {
             if (OnCompleted != null)
                 await OnCompleted();
         }
 
-        async Task IObserver<T>.OnError(Exception exception)
+        async Task IAsyncObserver<T>.OnError(Exception exception)
         {
             if (OnError != null)
                 await OnError(exception);
         }
 
-        async Task IObserver<T>.OnNext(T next)
+        async Task IAsyncObserver<T>.OnNext(T next)
         {
             if (OnNext != null)
                 await OnNext(next);

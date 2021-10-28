@@ -7,9 +7,9 @@ namespace RX
 {
     public static class ReactiveExtentions
     {
-        public static IDisposable Subscribe<T>(this IObservable<T> observable, Func<T, Task> onNext, bool skipLatest = false, int priority = 1000) => Subscribe(observable, onNext, null, skipLatest, priority);
-        public static IDisposable Subscribe<T>(this IObservable<T> observable, Func<T, Task> onNext, Func<Task> onCompleted, bool skipLatest = false, int priority = 0) => Subscribe(observable, onNext, onCompleted, null, skipLatest, priority);
-        public static IDisposable Subscribe<T>(this IObservable<T> observable, Func<T, Task> onNext, Func<Task> onCompleted, Func<Exception, Task> onError, bool executeOnNextOnSubscribe = false, int priority = 0)
+        public static IDisposable Subscribe<T>(this IAsyncObservable<T> observable, Func<T, Task> onNext, bool skipLatest = false, int priority = 1000) => Subscribe(observable, onNext, null, skipLatest, priority);
+        public static IDisposable Subscribe<T>(this IAsyncObservable<T> observable, Func<T, Task> onNext, Func<Task> onCompleted, bool skipLatest = false, int priority = 0) => Subscribe(observable, onNext, onCompleted, null, skipLatest, priority);
+        public static IDisposable Subscribe<T>(this IAsyncObservable<T> observable, Func<T, Task> onNext, Func<Task> onCompleted, Func<Exception, Task> onError, bool executeOnNextOnSubscribe = false, int priority = 0)
         {
             var observer = new DefaultObserver<T>
             {
@@ -26,9 +26,9 @@ namespace RX
 
     public static class LinqReactiveExtentions
     {
-        public static IObservable<T> Where<T>(this IObservable<T> observable, Predicate<T> predicate) => new WhereObservable<T>(observable, predicate);
-        public static IObservable<TResult> Select<TSource, TResult>(this IObservable<TSource> observable, Func<TSource, TResult> selector) => new SelectObservable<TSource, TResult>(observable, selector);
-        public static IObservable<TResult> SelectMany<TSource, TResult>(this IObservable<TSource> observable, Func<TSource, IEnumerable<TResult>> selector) => new SelectManyObservable<TSource, TResult>(observable, selector);
+        public static IAsyncObservable<T> Where<T>(this IAsyncObservable<T> observable, Predicate<T> predicate) => new WhereObservable<T>(observable, predicate);
+        public static IAsyncObservable<TResult> Select<TSource, TResult>(this IAsyncObservable<TSource> observable, Func<TSource, TResult> selector) => new SelectObservable<TSource, TResult>(observable, selector);
+        public static IAsyncObservable<TResult> SelectMany<TSource, TResult>(this IAsyncObservable<TSource> observable, Func<TSource, IEnumerable<TResult>> selector) => new SelectManyObservable<TSource, TResult>(observable, selector);
     }
 
     public static class DisposableExtentions

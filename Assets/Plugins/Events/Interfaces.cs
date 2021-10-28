@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace RX
 {
-    public interface IReadonlyReactiveProperty<T> : IObservable<T>
+    public interface IReadonlyReactiveProperty<out T> : IAsyncObservable<T>
     {
         T Value { get; }
     }
@@ -14,12 +14,12 @@ namespace RX
         new T Value { get; set; }
     }
 
-    public interface IObservable<out T>
+    public interface IAsyncObservable<out T>
     {
-        IDisposable Subscribe(IObserver<T> observer);
+        IDisposable Subscribe(IAsyncObserver<T> observer);
     }
 
-    public interface IObserver<in T>
+    public interface IAsyncObserver<in T>
     {
         bool SkipLatestOnSubscribe { get; }
         int Priority { get; }
@@ -27,5 +27,6 @@ namespace RX
         Task OnNext(T value);
         Task OnError(Exception e);
         Task OnCompleted();
+
     }
 }

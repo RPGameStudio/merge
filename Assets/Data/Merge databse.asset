@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a498c3aba6a9c48559f275a4a416e4a2, type: 3}
+  m_Name: Merge databse
+  m_EditorClassIdentifier: 
+  _pairs:
+  - _id: Square+Square=Circle
+    _entity1: {fileID: 11400000, guid: be5e564cea05f4b859871831b03f88c7, type: 2}
+    _entity2: {fileID: 11400000, guid: be5e564cea05f4b859871831b03f88c7, type: 2}
+    _resultEntity: {fileID: 11400000, guid: 4a0c07e0d05ca42a5bdf854983b56834, type: 2}
+  - _id: Circle+Circle=Capsule
+    _entity1: {fileID: 11400000, guid: 4a0c07e0d05ca42a5bdf854983b56834, type: 2}
+    _entity2: {fileID: 11400000, guid: 4a0c07e0d05ca42a5bdf854983b56834, type: 2}
+    _resultEntity: {fileID: 11400000, guid: 0154edc781fa24be29ec9ecabf230cf2, type: 2}
+  - _id: Capsule+Capsule=Hexagon Flat-Top
+    _entity1: {fileID: 11400000, guid: 0154edc781fa24be29ec9ecabf230cf2, type: 2}
+    _entity2: {fileID: 11400000, guid: 0154edc781fa24be29ec9ecabf230cf2, type: 2}
+    _resultEntity: {fileID: 11400000, guid: 4c786797d99874ca687e4baa7bb304d1, type: 2}
+  - _id: Hexagon Flat-Top+Hexagon Flat-Top=Hexagon Pointed-Top
+    _entity1: {fileID: 11400000, guid: 4c786797d99874ca687e4baa7bb304d1, type: 2}
+    _entity2: {fileID: 11400000, guid: 4c786797d99874ca687e4baa7bb304d1, type: 2}
+    _resultEntity: {fileID: 11400000, guid: c618451ecc5e94619b7c36fbc5ed5c3a, type: 2}
+  - _id: Hexagon Pointed-Top+Hexagon Pointed-Top=Isometric Diamond
+    _entity1: {fileID: 11400000, guid: c618451ecc5e94619b7c36fbc5ed5c3a, type: 2}
+    _entity2: {fileID: 11400000, guid: c618451ecc5e94619b7c36fbc5ed5c3a, type: 2}
+    _resultEntity: {fileID: 11400000, guid: 89e93e0e88e704a09af10ab30dcea33f, type: 2}
+  - _id: Isometric Diamond+Isometric Diamond=9-Sliced
+    _entity1: {fileID: 11400000, guid: 89e93e0e88e704a09af10ab30dcea33f, type: 2}
+    _entity2: {fileID: 11400000, guid: 89e93e0e88e704a09af10ab30dcea33f, type: 2}
+    _resultEntity: {fileID: 11400000, guid: 015cdea93f2724d4d9759528ce1d7bb7, type: 2}
+  - _id: 9-Sliced+9-Sliced=Square
+    _entity1: {fileID: 11400000, guid: 015cdea93f2724d4d9759528ce1d7bb7, type: 2}
+    _entity2: {fileID: 11400000, guid: 015cdea93f2724d4d9759528ce1d7bb7, type: 2}
+    _resultEntity: {fileID: 11400000, guid: be5e564cea05f4b859871831b03f88c7, type: 2}
